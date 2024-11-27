@@ -104,11 +104,11 @@ app.all("*",(req,res,next)=>{
 })
 
 app.use((err, req, res, next) => {
-  const status = err.status || 500; // Default to 500 (Internal Server Error) if status is undefined
-  const message = err.message || 'An unexpected error occurred'; // Default message
-  res.status(status).send(message);
-  
+  const { statusCode = 500, message = "Something went wrong!" } = err;
+  err.message = message; // Ensure the error object has a message property
+  res.status(statusCode).render("error", { err });
 });
+
 
 app.listen(8001, () => {
   console.log('server is listening at the port 8001')

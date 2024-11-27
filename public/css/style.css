@@ -13,12 +13,12 @@ body{
 }
 
 .fa-compass{
-    color:#fe424d;
+    color:#0ead69;
     font-size: 2rem;
 }
 
 .nav-link{
-    color: #222222 !important  ;
+    color: #0ead69 !important  ;
 }
 
 .f-info-links a:hover{
@@ -93,12 +93,12 @@ justify-content: center;
 
 /* NEW PAGE */
 .add-btn{
-    background-color: #fe424d !important;
+    background-color: #0ead69 !important;
     border: none !important;
 }
 /* edit button */
 .edit-btn{
-    background-color: #fe424d !important;
+    background-color: #0ead69!important;
     border: none !important;
 }
 
